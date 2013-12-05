@@ -1,0 +1,1 @@
+<? $optname = post("optname"); ?>

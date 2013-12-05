@@ -1,0 +1,40 @@
+<script type="text/javascript">
+	$("#feedback_form").submit(function() {
+		$.post("ajax/", {
+			feedback : $("#feedbacktext").val()
+		}, function(html) {
+			error(html);
+			$(".black_bg").remove();
+		});
+		return false;
+	});
+
+</script>
+<style type="text/css">
+	#feedbacktext {
+		height: 200px;
+		padding: 10px;
+		width: 300px;
+		height: 200px;
+		border: 1px solid #ccc;
+		font-size: 14px;
+	}
+</style>
+<div class="black_bg">
+	<form id="feedback_form" class="popup" style="width: 320px; text-align: left;">
+		<h1>Feedback/Bugs</h1>
+		<p class="fs11">
+			Thank you for taking your time to provide your feedback or report bugs.
+			This is very essential in growing the website to provide you a better experience.
+		</p>
+		<br />
+		<div class="fs14" style="margin-bottom: 5px">
+			Your message:
+		</div>
+		<textarea id="feedbacktext"></textarea>
+		<div style="margin: 5px 0;">
+			<input type="submit" value="Submit" data-submit="Sending.." class="blue button" />
+			<input type="button" class="close-button black button" value="Cancel" />
+		</div>
+	</form>
+</div>

@@ -1,0 +1,168 @@
+
+@font-face {
+    font-family: 'Wow';
+    src: url('wow/wow-webfont.eot');
+    src: url('wow/wow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wow/wow-webfont.woff') format('woff'),
+         url('wow/wow-webfont.ttf') format('truetype'),
+         url('wow/wow-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'WowM';
+    src: url('wowm/wowm-webfont.eot');
+    src: url('wowm/wowm-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wowm/wowm-webfont.woff') format('woff'),
+         url('wowm/wowm-webfont.ttf') format('truetype'),
+         url('wowm/wowm-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#error {
+	width: 590px;
+	padding: 10px;
+	
+    background-color:  #ffaa44;
+    background: -webkit-gradient(linear,left bottom, left top, color-stop(0.22, rgb(255,144,9)), color-stop(0.81, rgb(255,170,68)));
+    background: -moz-linear-gradient(center bottom, rgb(255,144,9) 22%, rgb(255,170,68) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffaa44, endColorStr=#ff9009);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaa44, endColorstr=#ff9009)";
+	
+	color: white;
+	z-index: 100;
+	font-size: 15px;
+	font-style: italic;
+	text-align: center;
+	position: absolute;
+	top: -40px;
+}
+#feedback_link {
+	position: fixed;
+	width: 60px;
+	height: 136px;
+	left: -10px;
+	top: 50%;
+	margin-top: -68px;
+	background-image: url('../images/feedback.png');
+	background-position: left top;
+	z-index: 20;
+}
+
+/* Modules
+ ----------------------------- */
+#mod_right .module {
+	padding: 10px;
+	padding-bottom: 0;
+	border-bottom: 2px solid #ccc;
+}
+.module {
+	margin-bottom: 20px;
+}
+.module h1 {
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+/* MiniPosts
+ ----------------------------- */
+
+.miniposts > li:first-child {
+	border-top: 1px solid #ccc;
+}
+.miniposts > li:last-child {
+	border-bottom: none;
+}
+.miniposts > li {
+	border-top: 1px solid white;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+.miniposts > li > a, .miniposts > li > a > q {
+	font-size: 13px;
+}
+
+/* Tools List
+ ----------------------------- */
+#toolslist {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #FCFCA9;
+	border: 1px solid #D6D656;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#toolslist li:hover, #toolslist li.active {
+	background-color: #E8E85F;
+}
+#toolslist li:hover a, #toolslist li.active a {
+	text-decoration: none;
+}
+#toolslist li {
+	float: left;
+}
+#toolslist li a {
+	padding: 6px 10px;
+	font-size: 11px;
+	color: black;
+	display: block;
+}
+
+/* Sortbox
+ ----------------------------- */
+.sort-box {
+	background-color: #F5F5F5;
+	border: solid #c7c7c7;
+	border-width: 1px 0;
+	padding: 10px;
+	text-align: right;
+	font-size: 12px;
+}
+.sort-box * {
+	font-size: 12px;
+}
+
+
+/* Popup
+ ----------------------------- */
+.black_bg {
+	background-image: url('../images/black_50_bg.png');
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+.popup {
+	background-color: white;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	padding: 15px;
+	font-size: 12px;
+	box-shadow: 0 0 30px black;
+	-moz-box-shadow: 0 0 30px black;
+	-webkit-box-shadow: 0 0 30px black;
+}
+.popup h1 {
+	margin: 0 0 5px 0;
+	font-size: 26px;
+}
+
+div.close-button {
+	cursor: pointer;
+	background-image: url(../images/close.png);
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 34px;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	z-index: 10;
+}
